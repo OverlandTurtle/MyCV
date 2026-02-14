@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alexander Myburgh — CV</title>
+
+  <!-- Bootstrap (CDN) -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+
+  <!-- Your custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="hero py-5">
+    <div class="container">
+      <div class="d-flex flex-wrap justify-content-between align-items-start gap-3">
+        <div>
+          <h1 class="mb-1">Alexander Myburgh</h1>
+          <p class="mb-0 text-white-50">
+            Aspiring Software Developer • South Africa
+          </p>
+        </div>
+
+        <div class="text-start text-md-end">
+          <div>
+            <a class="link-light" href="mailto:blackdrum457@flounderfantasy.com">
+              blackdrum457@flounderfantasy.com
+            </a>
+          </div>
+          <div>
+            <a class="link-light" href="https://github.com/OverlandTurtle" target="_blank" rel="noreferrer">
+              github.com/OverlandTurtle
+            </a>
+          </div>
+          <!-- Phone intentionally omitted -->
+        </div>
+      </div>
+
+      <!-- Profile (max 3 paragraphs as per brief) -->
+      <div class="mt-4 col-lg-10">
+        <p class="mb-2 text-white-75">
+          Detail-driven post-production professional transitioning into software engineering.
+          I bring 10+ years of real-world delivery experience in deadline-heavy environments,
+          where quality, clear communication, and consistency matter.
+        </p>
+        <p class="mb-0 text-white-75">
+          I’m currently completing a Python-focused Software Engineering bootcamp and building
+          Django projects with clean Git practices and reproducible local setups. My goal is to
+          move into a junior developer role where I can keep learning and ship practical work.
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <main class="container my-4">
+    <!-- Skills -->
+    <section class="card shadow-sm mb-4">
+      <div class="card-body">
+        <h2 class="h5 mb-3">Skills & Competencies</h2>
+        <div class="row g-2">
+          <div class="col-12 col-md-6">
+            <ul class="mb-0">
+              <li>Python (fundamentals, OOP)</li>
+              <li>Django (beginner)</li>
+              <li>SQL (intro)</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6">
+            <ul class="mb-0">
+              <li>HTML & CSS (basic)</li>
+              <li>Git & GitHub</li>
+              <li>QA mindset + detail focus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="card shadow-sm mb-4">
+      <div class="card-body">
+        <h2 class="h5 mb-3">Projects</h2>
+
+        <div class="mb-3">
+          <div class="d-flex flex-wrap justify-content-between align-items-baseline gap-2">
+            <h3 class="h6 mb-0">Django eCommerce Store</h3>
+            <a href="https://github.com/OverlandTurtle/ecommerce-django-store" target="_blank" rel="noreferrer">
+              View on GitHub
+            </a>
+          </div>
+          <p class="text-muted mb-0">
+            Role-based authentication (Vendors vs Buyers), store & product CRUD, cart/checkout flow,
+            orders, and reviews.
+          </p>
+        </div>
+
+        <div>
+          <div class="d-flex flex-wrap justify-content-between align-items-baseline gap-2">
+            <h3 class="h6 mb-0">Django Sticky Notes (CRUD)</h3>
+            <a href="https://github.com/OverlandTurtle/django-sticky-notes" target="_blank" rel="noreferrer">
+              View on GitHub
+            </a>
+          </div>
+          <p class="text-muted mb-0">
+            Notes app with create/view/edit/delete functionality using Django templates and simple styling.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section class="card shadow-sm mb-4">
+      <div class="card-body">
+        <h2 class="h5 mb-3">Work Experience</h2>
+
+        <div class="mb-2">
+          <div class="d-flex flex-wrap justify-content-between align-items-baseline gap-2">
+            <h3 class="h6 mb-0">Audio Post-Production — Multiple Roles</h3>
+            <span class="text-muted">Cape Town, South Africa</span>
+          </div>
+          <ul class="mb-0">
+            <li>Delivered consistent, spec-compliant work under tight deadlines.</li>
+            <li>Client-facing coordination: tracked schedules, fixes, and deliveries end-to-end.</li>
+            <li>Troubleshot technical issues and improved repeatable workflows.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="card shadow-sm mb-4">
+      <div class="card-body">
+        <h2 class="h5 mb-3">Education</h2>
+
+        <div class="mb-2">
+          <div class="d-flex flex-wrap justify-content-between align-items-baseline gap-2">
+            <h3 class="h6 mb-0">Software Engineering Bootcamp — HyperionDev / Stellenbosch</h3>
+            <span class="text-muted">Completing Feb 2026</span>
+          </div>
+          <p class="text-muted mb-0">
+            Python (in-depth), OOP, SQL intro, HTML/CSS, Django fundamentals.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container pb-5 text-center text-muted">
+    <small>© <span id="year"></span> Alexander Myburgh</small>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
